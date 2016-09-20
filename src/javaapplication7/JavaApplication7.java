@@ -20,6 +20,7 @@ public class JavaApplication7
         for (i=0;i<str1.length()-sub+1;i++)
         {
             String substr = str1.substring(i,i+sub);
+            System.out.println(substr);
             if (i == 0)
             {
                 maxstr = substr;
@@ -31,13 +32,15 @@ public class JavaApplication7
                 if (substr.compareTo(maxstr)>0) maxstr = substr;
             }
         }
+        System.out.println(minstr);
+        System.out.println(maxstr);
     }
 
 
     
     public static void main(String[] args) 
     {
-        printout("Hello", 2);
+        printout("hello", 2);
     }
     
 }
