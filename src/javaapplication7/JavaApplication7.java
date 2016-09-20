@@ -14,6 +14,8 @@ public class JavaApplication7
     
     public static void printout(String str1, int sub)
     {
+        String maxstr = "";
+        String minstr = "";
         int i = 0;
         for (i=0;i<str1.length()-sub+1;i++)
         {
