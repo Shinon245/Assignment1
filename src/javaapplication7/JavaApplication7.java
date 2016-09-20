@@ -20,6 +20,7 @@ public class JavaApplication7
         for (i=0;i<str1.length()-sub+1;i++)
         {
             String substr = str1.substring(i,i+sub);
+            substr = substr.toLowerCase();
             System.out.println(substr);
             if (i == 0)
             {
@@ -40,7 +41,7 @@ public class JavaApplication7
     
     public static void main(String[] args) 
     {
-        printout("welcometojava", 3);
+        printout("Welcometojava", 3);
     }
     
 }
