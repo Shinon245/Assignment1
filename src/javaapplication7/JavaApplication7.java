@@ -40,7 +40,7 @@ public class JavaApplication7
     
     public static void main(String[] args) 
     {
-        printout("hello", 2);
+        printout("welcometojava", 3);
     }
     
 }
