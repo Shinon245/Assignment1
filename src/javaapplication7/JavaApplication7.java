@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package javaapplication7;
+import static kiss.API.*;
 
 /**
  *
@@ -21,7 +22,6 @@ public class JavaApplication7
         {
             String substr = str1.substring(i,i+sub);
             substr = substr.toLowerCase();
-            System.out.println(substr);
             if (i == 0)
             {
                 maxstr = substr;
@@ -33,8 +33,13 @@ public class JavaApplication7
                 if (substr.compareTo(maxstr)>0) maxstr = substr;
             }
         }
-        System.out.println(minstr);
-        System.out.println(maxstr);
+        try(Close out = outExpect("ava",EOL,
+                                  "wel",EOL)) {
+            println(minstr);
+            println(maxstr);
+        }
+        println(minstr);
+        println(maxstr);
     }
 
 
